@@ -11,6 +11,7 @@ const connections = mysql.createPool({
   password: config.MYSQL_PASSWORD
 });
 
+// 调用了 getConnection 之后, 服务器程序, 就和远端数据库, 进行了链接. 
 connections.getConnection((err, conn) => {
   if (err)  {
     console.log(err)

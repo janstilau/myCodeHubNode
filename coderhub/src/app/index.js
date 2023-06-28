@@ -7,6 +7,7 @@ const useRoutes = require('../router');
 
 const app = new Koa();
 
+// useRoutes 是一个函数, 通过 ../router 这个文件导出的. 统一在这个文件里面, 进行
 app.useRoutes = useRoutes;
 
 app.use(bodyParser());
